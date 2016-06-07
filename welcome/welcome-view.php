@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Welcome Page View
  *
@@ -11,6 +12,7 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
+
 ?>
 
 <div class="wrap about-wrap">

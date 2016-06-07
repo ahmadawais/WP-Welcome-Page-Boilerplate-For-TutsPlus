@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Welcome Logic
  *
@@ -11,7 +12,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
-
 
 /**
  * Welcome page redirect.
@@ -47,7 +47,6 @@ function wpw_safe_welcome_redirect() {
 
 add_action( 'admin_init', 'wpw_safe_welcome_redirect' );
 
-
 /**
  * Adds welcome page sub menu.
  *
@@ -70,7 +69,6 @@ function wpw_welcome_page() {
 
 add_action( 'admin_menu', 'wpw_welcome_page' );
 
-
 /**
  * Welcome page content.
  *
@@ -84,7 +82,6 @@ function wpw_welcome_page_content() {
 
     }
 }
-
 
 /**
  * Enqueue Styles.
@@ -120,5 +117,3 @@ if ( ! function_exists( 'wpw_styles' ) ) {
   add_action( 'admin_enqueue_scripts', 'wpw_styles' );
 
 }
-
-

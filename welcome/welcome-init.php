@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Welcome Page Init
  *
@@ -12,7 +13,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
-
 
 /**
  * Activates the welcome page.
@@ -29,7 +29,6 @@ function wpw_welcome_activate() {
 }
 
 register_activation_hook( WPW_PLUGIN_FILE, 'wpw_welcome_activate' );
-
 
 /**
  * Deactivates welcome page
