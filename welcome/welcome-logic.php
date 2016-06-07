@@ -88,18 +88,15 @@ function wpw_welcome_page_content() {
  *
  * @since 1.0.0
  */
-
-if ( ! function_exists( 'wpw_styles' ) ) {
-
-  function wpw_styles( $hook ) {
+function wpw_styles( $hook ) {
 
     global $wpw_sub_menu;
 
     // Add style to the welcome page only.
     if ( $hook != $wpw_sub_menu ) {
-        
+
       return;
-        
+
     }
 
     // Welcome page styles.
@@ -111,9 +108,7 @@ if ( ! function_exists( 'wpw_styles' ) ) {
       'all'
     );
 
-  }
-
-  // Enqueue the styles.
-  add_action( 'admin_enqueue_scripts', 'wpw_styles' );
-
 }
+
+// Enqueue the styles.
+add_action( 'admin_enqueue_scripts', 'wpw_styles' );
