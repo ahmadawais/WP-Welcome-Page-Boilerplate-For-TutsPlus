@@ -11,10 +11,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
-
-// Logo image.
-$logo_img = WPW_URL . '/welcome/img/logo.png';
-
 ?>
 
 <div class="wrap about-wrap">
@@ -25,7 +21,7 @@ $logo_img = WPW_URL . '/welcome/img/logo.png';
         <?php printf( __( "WordPress Product's welcome page boilerplate for WordPress plugins.", 'WPW' ), WPW_VERSION ); ?>
     </div>
 
-    <div class="wp-badge welcome__logo" style="background: url( <?php echo $logo_img; ?> )  center 24px no-repeat #0092F9;"></div>
+    <div class="wp-badge welcome__logo"></div>
 
     <div class="feature-section one-col">
         <h3><?php _e( 'Get Started', 'WPW' ); ?></h3>
