@@ -26,9 +26,9 @@ if ( ! defined( 'WPINC' ) ) {
     <div class="feature-section one-col">
         <h3><?php _e( 'Get Started', 'WPW' ); ?></h3>
         <ul>
-            <li><strong><?php _e( 'Step #1:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
-            <li><strong><?php _e( 'Step #2:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
-            <li><strong><?php _e( 'Step #3:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #1:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #2:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #3:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
         </ul>
      </div>
 
