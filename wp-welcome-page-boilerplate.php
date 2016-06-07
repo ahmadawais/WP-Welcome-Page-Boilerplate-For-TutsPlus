@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WP Welcome Page Boilerplate
  * Plugin URI: http://code.tutsplus.com/articles/building-a-welcome-page-for-your-wordpress-product-introduction--cms-26013
@@ -17,7 +18,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
-
 
 // Plugin version.
 if ( ! defined( 'WPW_VERSION' ) ) {
@@ -53,7 +53,6 @@ if ( ! defined( 'WPW_PLUGIN_FILE' ) ) {
     define( 'WPW_PLUGIN_FILE', __FILE__ );
 
 }
-
 
 if ( file_exists( WPW_DIR . '/welcome/welcome-init.php' ) ) {
 

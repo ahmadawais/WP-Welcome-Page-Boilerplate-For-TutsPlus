@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Welcome Page View
  *
@@ -12,9 +13,6 @@ if ( ! defined( 'WPINC' ) ) {
 
 }
 
-// Logo image.
-$logo_img = WPW_URL . '/welcome/img/logo.png';
-
 ?>
 
 <div class="wrap about-wrap">
@@ -25,14 +23,14 @@ $logo_img = WPW_URL . '/welcome/img/logo.png';
         <?php printf( __( "WordPress Product's welcome page boilerplate for WordPress plugins.", 'WPW' ), WPW_VERSION ); ?>
     </div>
 
-    <div class="wp-badge welcome__logo" style="background: url( <?php echo $logo_img; ?> )  center 24px no-repeat #0092F9;"></div>
+    <div class="wp-badge welcome__logo"></div>
 
     <div class="feature-section one-col">
         <h3><?php _e( 'Get Started', 'WPW' ); ?></h3>
         <ul>
-            <li><strong><?php _e( 'Step #1:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
-            <li><strong><?php _e( 'Step #2:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
-            <li><strong><?php _e( 'Step #3:', 'WPW' ); ?></strong><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #1:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #2:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
+            <li><strong><?php _e( 'Step #3:', 'WPW' ); ?></strong> <?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', 'WPW' ); ?></li>
         </ul>
      </div>
 

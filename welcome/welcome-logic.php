@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Welcome Logic
  *
@@ -11,7 +12,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 
 }
-
 
 /**
  * Welcome page redirect.
@@ -47,7 +47,6 @@ function wpw_safe_welcome_redirect() {
 
 add_action( 'admin_init', 'wpw_safe_welcome_redirect' );
 
-
 /**
  * Adds welcome page sub menu.
  *
@@ -66,12 +65,9 @@ function wpw_welcome_page() {
       'wpw_welcome_page_content' // The function to be called to output the content for this page.
   );
 
-  // Add the screen id to the db for smart script enqueue.
-  // add_option( 'wpw_welcome_page_id', $wpw_sub_menu );
 }
 
 add_action( 'admin_menu', 'wpw_welcome_page' );
-
 
 /**
  * Welcome page content.
@@ -87,22 +83,20 @@ function wpw_welcome_page_content() {
     }
 }
 
-
 /**
  * Enqueue Styles.
  *
  * @since 1.0.0
  */
-
-if ( ! function_exists( 'wpw_styles' ) ) {
-
-  function wpw_styles( $hook ) {
+function wpw_styles( $hook ) {
 
     global $wpw_sub_menu;
 
     // Add style to the welcome page only.
     if ( $hook != $wpw_sub_menu ) {
+
       return;
+
     }
 
     // Welcome page styles.
@@ -114,11 +108,7 @@ if ( ! function_exists( 'wpw_styles' ) ) {
       'all'
     );
 
-  }
-
-  // Enqueue the styles.
-  add_action( 'admin_enqueue_scripts', 'wpw_styles' );
-
 }
 
-
+// Enqueue the styles.
+add_action( 'admin_enqueue_scripts', 'wpw_styles' );
