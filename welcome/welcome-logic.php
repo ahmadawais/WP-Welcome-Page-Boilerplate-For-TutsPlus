@@ -66,8 +66,6 @@ function wpw_welcome_page() {
       'wpw_welcome_page_content' // The function to be called to output the content for this page.
   );
 
-  // Add the screen id to the db for smart script enqueue.
-  // add_option( 'wpw_welcome_page_id', $wpw_sub_menu );
 }
 
 add_action( 'admin_menu', 'wpw_welcome_page' );
