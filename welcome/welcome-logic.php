@@ -102,7 +102,9 @@ if ( ! function_exists( 'wpw_styles' ) ) {
 
     // Add style to the welcome page only.
     if ( $hook != $wpw_sub_menu ) {
+        
       return;
+        
     }
 
     // Welcome page styles.
