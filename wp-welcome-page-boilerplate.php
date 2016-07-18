@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name: WP Welcome Page Boilerplate
+ * Plugin Name: WP Welcome Page Boilerplate for Tuts+
  * Plugin URI: http://code.tutsplus.com/articles/building-a-welcome-page-for-your-wordpress-product-introduction--cms-26013
  * Description: Welcome page boilerplate for WordPress plugins.
  * Version: 1.0.0
